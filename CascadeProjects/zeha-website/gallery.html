@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - ZEHA | Our Work in Pictures</title>
+    <meta name="description" content="See ZEHA's impact through photos of our programs, communities we serve, and the positive changes we're creating together.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ZEHA</h2>
+                <span>Zambesia Education and Health Aid</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="blog.html" class="nav-link">News</a>
+                <a href="volunteer.html" class="nav-link">Get Involved</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="donate.html" class="nav-link donate-btn">Donate</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Witness the impact of our work through the stories captured in these images</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="health">Health</button>
+                <button class="filter-btn" data-filter="poverty">Poverty Alleviation</button>
+                <button class="filter-btn" data-filter="economic">Economic Development</button>
+                <button class="filter-btn" data-filter="climate">Climate Action</button>
+                <button class="filter-btn" data-filter="rights">Human Rights</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Education Photos -->
+                <div class="gallery-item" data-category="education">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-school"></i>
+                            <p>School Construction</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>New School Building</h3>
+                            <p>Opening ceremony of our 25th school in rural Zambesia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="education">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <p>Teacher Training</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Teacher Training Workshop</h3>
+                            <p>Local teachers learning modern teaching methodologies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="education">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p>Graduation Day</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Graduation Ceremony</h3>
+                            <p>Students celebrating their academic achievements</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Photos -->
+                <div class="gallery-item" data-category="health">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-hospital"></i>
+                            <p>Health Clinic</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Community Health Clinic</h3>
+                            <p>New clinic serving 5,000 community members</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="health">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user-md"></i>
+                            <p>Medical Training</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Health Worker Training</h3>
+                            <p>Training community health workers in maternal care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="health">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-baby"></i>
+                            <p>Mother & Child</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Maternal Health Program</h3>
+                            <p>Mother and newborn receiving quality healthcare</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poverty Alleviation Photos -->
+                <div class="gallery-item" data-category="poverty">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-seedling"></i>
+                            <p>Agricultural Training</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Sustainable Farming</h3>
+                            <p>Farmers learning climate-smart agriculture techniques</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="poverty">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-handshake"></i>
+                            <p>Microloan Program</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Microloan Distribution</h3>
+                            <p>Small business owners receiving startup capital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="poverty">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-store"></i>
+                            <p>Small Business</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Thriving Local Business</h3>
+                            <p>Success story of a microloan recipient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Economic Development Photos -->
+                <div class="gallery-item" data-category="economic">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-industry"></i>
+                            <p>Market Construction</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>New Market Center</h3>
+                            <p>Modern trading facility connecting farmers to markets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="economic">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Business Training</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Entrepreneurship Training</h3>
+                            <p>Local entrepreneurs learning business management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Climate Action Photos -->
+                <div class="gallery-item" data-category="climate">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-tree"></i>
+                            <p>Tree Planting</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Reforestation Project</h3>
+                            <p>Community members planting indigenous trees</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="climate">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-solar-panel"></i>
+                            <p>Solar Installation</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Solar Energy Project</h3>
+                            <p>Clean energy bringing power to remote communities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Human Rights Photos -->
+                <div class="gallery-item" data-category="rights">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-users"></i>
+                            <p>Women's Empowerment</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Women's Leadership Training</h3>
+                            <p>Empowering women to become community leaders</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rights">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-balance-scale"></i>
+                            <p>Legal Aid</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Legal Rights Workshop</h3>
+                            <p>Community members learning about their legal rights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Be Part of Our Story</h2>
+            <p>Help us create more moments of positive change in Zambesian communities.</p>
+            <div class="cta-buttons">
+                <a href="donate.html" class="btn btn-primary">Support Our Work</a>
+                <a href="volunteer.html" class="btn btn-outline">Join Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ZEHA</h3>
+                    <p>Zambesia Education and Health Aid</p>
+                    <p>Empowering communities through sustainable development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="volunteer.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#education">Education</a></li>
+                        <li><a href="programs.html#health">Health</a></li>
+                        <li><a href="programs.html#poverty">Poverty Alleviation</a></li>
+                        <li><a href="programs.html#climate">Climate Action</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p>Email: info@zeha.org</p>
+                    <p>Phone: +260 XXX XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zambesia Education and Health Aid (ZEHA). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

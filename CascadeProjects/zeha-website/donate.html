@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - ZEHA | Support Our Mission</title>
+    <meta name="description" content="Support ZEHA's mission to empower communities in Zambesia. Make a donation through bank transfer or mobile payment to create lasting change.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ZEHA</h2>
+                <span>Zambesia Education and Health Aid</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="blog.html" class="nav-link">News</a>
+                <a href="volunteer.html" class="nav-link">Get Involved</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="donate.html" class="nav-link donate-btn active">Donate</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Make a Difference</h1>
+            <p>Your donation helps us create lasting change in Zambesian communities</p>
+        </div>
+    </section>
+
+    <!-- Donation Impact -->
+    <section class="donation-impact">
+        <div class="container">
+            <h2>Your Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-amount">$25</div>
+                    <div class="impact-description">
+                        <h3>School Supplies</h3>
+                        <p>Provides textbooks and learning materials for one student for a full academic year.</p>
+                    </div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-amount">$50</div>
+                    <div class="impact-description">
+                        <h3>Medical Care</h3>
+                        <p>Covers basic healthcare services for a family of four for one month.</p>
+                    </div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-amount">$100</div>
+                    <div class="impact-description">
+                        <h3>Teacher Training</h3>
+                        <p>Sponsors professional development training for one teacher.</p>
+                    </div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-amount">$250</div>
+                    <div class="impact-description">
+                        <h3>Micro-loan</h3>
+                        <p>Provides startup capital for a small business to lift a family out of poverty.</p>
+                    </div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-amount">$500</div>
+                    <div class="impact-description">
+                        <h3>Clean Water</h3>
+                        <p>Helps build water infrastructure to serve an entire community.</p>
+                    </div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-amount">$1,000</div>
+                    <div class="impact-description">
+                        <h3>Classroom Construction</h3>
+                        <p>Contributes to building a new classroom that will serve hundreds of students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="donation-form-section">
+        <div class="container">
+            <div class="donation-content">
+                <div class="donation-form-container">
+                    <h2>Choose Your Donation Amount</h2>
+                    <form class="donation-form" id="donationForm">
+                        <div class="amount-selection">
+                            <div class="preset-amounts">
+                                <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                <button type="button" class="amount-btn" data-amount="100">$100</button>
+                                <button type="button" class="amount-btn" data-amount="250">$250</button>
+                                <button type="button" class="amount-btn" data-amount="500">$500</button>
+                                <button type="button" class="amount-btn" data-amount="1000">$1,000</button>
+                            </div>
+                            <div class="custom-amount">
+                                <label for="customAmount">Or enter custom amount:</label>
+                                <div class="amount-input-group">
+                                    <span class="currency-symbol">$</span>
+                                    <input type="number" id="customAmount" name="customAmount" min="1" placeholder="Enter amount">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="donation-frequency">
+                            <h3>Donation Frequency</h3>
+                            <div class="frequency-options">
+                                <label class="frequency-option">
+                                    <input type="radio" name="frequency" value="one-time" checked>
+                                    <span>One-time</span>
+                                </label>
+                                <label class="frequency-option">
+                                    <input type="radio" name="frequency" value="monthly">
+                                    <span>Monthly</span>
+                                </label>
+                                <label class="frequency-option">
+                                    <input type="radio" name="frequency" value="quarterly">
+                                    <span>Quarterly</span>
+                                </label>
+                                <label class="frequency-option">
+                                    <input type="radio" name="frequency" value="annually">
+                                    <span>Annually</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="donor-info">
+                            <h3>Your Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <textarea id="address" name="address" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="payment-method">
+                            <h3>Payment Method</h3>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="paymentMethod" value="bank-transfer" checked>
+                                    <span><i class="fas fa-university"></i> Bank Transfer</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="paymentMethod" value="mobile-money">
+                                    <span><i class="fas fa-mobile-alt"></i> Mobile Money</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates on our work
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="anonymous" value="yes">
+                                <span class="checkmark"></span>
+                                Make this donation anonymous
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary donate-submit-btn">
+                            <i class="fas fa-heart"></i> Complete Donation
+                        </button>
+                    </form>
+                </div>
+
+                <div class="donation-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-shield-alt"></i> Secure Donation</h3>
+                        <p>Your donation is secure and encrypted. We use industry-standard security measures to protect your information.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-receipt"></i> Tax Deductible</h3>
+                        <p>Your donation is tax-deductible. You will receive a receipt for your records after completing your donation.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-chart-pie"></i> Transparent Use</h3>
+                        <p>85% of every dollar goes directly to our programs. We maintain full transparency in how donations are used.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-envelope"></i> Stay Updated</h3>
+                        <p>Receive regular updates on how your donation is making a difference in Zambesian communities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Instructions -->
+    <section class="payment-instructions" id="paymentInstructions" style="display: none;">
+        <div class="container">
+            <div class="instructions-content">
+                <div class="bank-transfer-info" id="bankTransferInfo">
+                    <h2><i class="fas fa-university"></i> Bank Transfer Instructions</h2>
+                    <div class="bank-details">
+                        <div class="bank-detail">
+                            <strong>Bank Name:</strong> Standard Bank Zambia
+                        </div>
+                        <div class="bank-detail">
+                            <strong>Account Name:</strong> Zambesia Education and Health Aid
+                        </div>
+                        <div class="bank-detail">
+                            <strong>Account Number:</strong> 1234567890
+                        </div>
+                        <div class="bank-detail">
+                            <strong>Branch Code:</strong> 040026
+                        </div>
+                        <div class="bank-detail">
+                            <strong>Swift Code:</strong> SBICZMLX
+                        </div>
+                    </div>
+                    <p class="instruction-note">Please use your email address as the reference when making the transfer. You will receive a confirmation email once we receive your donation.</p>
+                </div>
+
+                <div class="mobile-money-info" id="mobileMoneyInfo">
+                    <h2><i class="fas fa-mobile-alt"></i> Mobile Money Instructions</h2>
+                    <div class="mobile-details">
+                        <div class="mobile-service">
+                            <h4>MTN Mobile Money</h4>
+                            <p><strong>Number:</strong> +260 XXX XXX XXX</p>
+                            <p><strong>Name:</strong> ZEHA Donations</p>
+                        </div>
+                        <div class="mobile-service">
+                            <h4>Airtel Money</h4>
+                            <p><strong>Number:</strong> +260 XXX XXX XXX</p>
+                            <p><strong>Name:</strong> ZEHA Donations</p>
+                        </div>
+                    </div>
+                    <p class="instruction-note">Please include your name and email address in the transaction note. SMS confirmation will be sent to your registered number.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Help -->
+    <section class="other-ways">
+        <div class="container">
+            <h2>Other Ways to Support Our Mission</h2>
+            <div class="ways-grid">
+                <div class="way-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Volunteer</h3>
+                    <p>Join our team of dedicated volunteers and contribute your skills to make a direct impact.</p>
+                    <a href="volunteer.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="way-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Corporate Partnership</h3>
+                    <p>Partner with us to create sustainable change while meeting your corporate social responsibility goals.</p>
+                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
+                <div class="way-card">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Spread the Word</h3>
+                    <p>Help us reach more people by sharing our mission on social media and with your network.</p>
+                    <a href="#" class="btn btn-outline">Share</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ZEHA</h3>
+                    <p>Zambesia Education and Health Aid</p>
+                    <p>Empowering communities through sustainable development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="volunteer.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#education">Education</a></li>
+                        <li><a href="programs.html#health">Health</a></li>
+                        <li><a href="programs.html#poverty">Poverty Alleviation</a></li>
+                        <li><a href="programs.html#climate">Climate Action</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p>Email: info@zeha.org</p>
+                    <p>Phone: +260 XXX XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zambesia Education and Health Aid (ZEHA). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/donate.js"></script>
+</body>
+</html>
