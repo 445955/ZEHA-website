@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="28" fill="#2563EB"/>
+  <g transform="translate(28,28)">
+    <circle cx="48" cy="48" r="18" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="152" cy="48" r="18" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="100" cy="120" r="18" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M48 48 L100 120 L152 48" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="50%" y="86%" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="40" fill="#FFFFFF">ZEHA</text>
+</svg>
